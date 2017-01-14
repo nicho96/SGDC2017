@@ -42,6 +42,7 @@ eyes.depth = -2;
 
 flame = instance_create(x, y, obj_flame_place)
 flame.depth = -3;
+flame.owner = self
 </string>
           </argument>
         </arguments>
@@ -89,7 +90,7 @@ flame.depth = -3;
         
         //Self
         mass -= 10;
-        speed += 1;
+        speed += mass / (mass + 10) * 2;
     }
     
     //set deadzone for analog

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.4
+owner = obj_player_1
 </string>
           </argument>
         </arguments>
@@ -48,10 +49,49 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &gt; room_height - 10000){
+            <string>if(y &gt; room_height - 10000 &amp;&amp; instance_exists(obj_planet_place )){
     dist = y - (room_height - 10000);
     alpha = dist / 10000;
-    draw_sprite_ext(spr_flame_blue, -1, x, y, image_xscale, image_yscale, 0, c_white, alpha / 2);
+    spriteF = spr_red_sfront;
+    spriteB = spr_red_sback;
+    if(owner.mass &lt; 60){
+        if(dist &lt; 3000){
+            spriteB = spr_red_sback;
+            spriteF = spr_red_sfront;
+        }else if(dist &lt; 6000){
+            spriteB = spr_blue_sback;
+            spriteF = spr_blue_sfront;
+        }else{
+            spriteB = spr_white_sback;
+            spriteF = spr_white_sfront;
+        }
+    }else if(owner.mass &lt; 100){
+        if(dist &lt; 3000){
+            spriteB = spr_red_mback;
+            spriteF = spr_red_mfront;
+        }else if(dist &lt; 6000){
+            spriteB = spr_blue_mback;
+            spriteF = spr_blue_mfront;
+        }else{
+            spriteB = spr_white_mback;
+            spriteF = spr_white_mfront;
+        }
+    }else{
+        if(dist &lt; 3000){
+            spriteB = spr_red_lback;
+            spriteF = spr_red_lfront;
+        }else if(dist &lt; 6000){
+            spriteB = spr_blue_lback;
+            spriteF = spr_blue_lfront;
+        }else{
+            spriteB = spr_white_lback;
+            spriteF = spr_white_lfront;
+        }
+    }
+    backS = draw_sprite_ext(spriteB, -1, x - 5, y - 40, image_xscale, image_yscale, 0, c_white, alpha / 2);
+    backS.depth = 1;
+    frontS = draw_sprite_ext(spriteF, -1, x - 5, y - 40, image_xscale, image_yscale, 0, c_white, alpha / 2);
+    frontS.depth = -1;
 }
 </string>
           </argument>

@@ -21,6 +21,7 @@
       <sprite>sprites\spr_fedora</sprite>
       <sprite>sprites\spr_eyes</sprite>
     </sprites>
+    <sprite>sprites\spr_planet_tor</sprite>
     <sprite>sprites\spr_planet_palm</sprite>
     <sprite>sprites\spr_planet_palm_small</sprite>
     <sprites name="Players">
@@ -94,8 +95,10 @@
   <paths name="paths"/>
   <objects name="objects">
     <objects name=" Planets">
+      <object>objects\obj_planet_place</object>
       <object>objects\obj_planet_exploded_place</object>
       <object>objects\obj_planet</object>
+      <object>objects\obj_planet_tor</object>
       <object>objects\obj_planet_palm</object>
     </objects>
     <object>objects\obj_player_1</object>
@@ -115,7 +118,6 @@
       <object>objects\obj_menu_controller</object>
       <object>objects\FULLSCREENBITCH</object>
     </objects>
-    <object>objects\obj_player_ast</object>
     <object>objects\obj_ast</object>
     <objects name="GUI">
       <object>objects\obj_words</object>
@@ -148,6 +150,7 @@
       <object>objects\obj_field</object>
       <object>objects\obj_quartz_1</object>
     </objects>
+    <object>objects\obj_player_ast</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mmenu</room>

@@ -42,6 +42,7 @@ eyes.depth = -2;
 
 flame = instance_create(x, y, obj_flame_place)
 flame.depth = -3;
+flame.owner = self
 </string>
           </argument>
         </arguments>
