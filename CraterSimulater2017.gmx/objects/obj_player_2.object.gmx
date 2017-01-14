@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 7
+            <string>speed = 12
 direction = 270
 
 hspd = 0;
