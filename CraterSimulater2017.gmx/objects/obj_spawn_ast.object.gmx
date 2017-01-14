@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>spawnY = max(instance_find(obj_player_1, 0).y, instance_find(obj_player_2, 0).y);
 if(lastSpawnY &lt; spawnY &amp;&amp; spawnY &lt; room_height){
-    for(i = 0; i &lt; 50; i++){
+    for(i = 0; i &lt; 25; i++){
         rx = random(room_width);
         ry = random(600) + spawnY + 800;
         obj = instance_create(rx, ry, obj_ast);

@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>r = random(2)
-
+show_debug_message(r)
 if(r == 0){
     tor = instance_create(x, y, obj_planet_tor);
     tor.image_xscale = 0.5;
-    ptor.image_yscale = 0.5;
+    tor.image_yscale = 0.5;
 }else{
     palm = instance_create(x, y, obj_planet_palm);
     palm.image_xscale = 0.5;
