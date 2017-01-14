@@ -47,6 +47,24 @@
     <sprites name="Powerfubs">
       <sprite>sprites\spr_quartz_1</sprite>
     </sprites>
+    <sprites name="Flames">
+      <sprites name="Med">
+        <sprite>sprites\spr_blue_mback</sprite>
+        <sprite>sprites\spr_red_mback</sprite>
+        <sprite>sprites\spr_white_mback</sprite>
+        <sprite>sprites\spr_blue_mfront</sprite>
+        <sprite>sprites\spr_red_mfront</sprite>
+        <sprite>sprites\spr_white_mfront</sprite>
+      </sprites>
+      <sprites name="Lrg">
+        <sprite>sprites\spr_blue_lback</sprite>
+        <sprite>sprites\spr_red_lback</sprite>
+        <sprite>sprites\spr_white_lback</sprite>
+        <sprite>sprites\spr_blue_lfront</sprite>
+        <sprite>sprites\spr_red_lfront</sprite>
+        <sprite>sprites\spr_white_lfront</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
