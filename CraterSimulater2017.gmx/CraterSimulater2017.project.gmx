@@ -15,9 +15,13 @@
       <sprite>sprites\spr_ast5</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\test2</object>
+    <object>objects\test</object>
     <objects name="Players">
       <object>objects\obj_ast1</object>
       <object>objects\obj_ast2</object>
@@ -25,10 +29,13 @@
       <object>objects\obj_ast4</object>
       <object>objects\obj_ast5</object>
     </objects>
+    <objects name="Functional">
+      <object>objects\obj_center_line</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_startup</room>
     <room>rooms\rm_main</room>
+    <room>rooms\rm_startup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
