@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_secret</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Players">
       <sprite>sprites\spr_ast1</sprite>
@@ -17,11 +19,16 @@
       <sprite>sprites\spr_center_bar</sprite>
       <sprite>sprites\spr_marker_red</sprite>
       <sprite>sprites\spr_marker_blue</sprite>
+      <sprite>sprites\spr_menu_text</sprite>
+      <sprite>sprites\spr_menubar</sprite>
+      <sprite>sprites\spr_ybar</sprite>
+      <sprite>sprites\spr_words</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
     <background>background\stars</background>
+    <background>background\bg_mmenu</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -38,12 +45,17 @@
       <object>objects\obj_center_line</object>
       <object>objects\obj_p1marker</object>
       <object>objects\obj_p2marker</object>
+      <object>objects\obj_menu_controller</object>
+      <object>objects\FULLSCREENBITCH</object>
     </objects>
     <object>objects\obj_ast</object>
+    <objects name="GUI">
+      <object>objects\obj_words</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_mmenu</room>
     <room>rooms\rm_main</room>
-    <room>rooms\rm_startup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
