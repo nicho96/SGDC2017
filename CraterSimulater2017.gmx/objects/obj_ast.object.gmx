@@ -61,6 +61,12 @@ if(y + 400 &lt; back_y){
     instance_destroy()
 }
 
+if(x &lt; 0){
+    x = room_width;
+}else if(x &gt; room_width){
+    x = 0;
+}
+
 image_angle = (image_angle + rotspeed) % 360
 </string>
           </argument>

@@ -8,8 +8,18 @@
     <sound>sound\snd_secret</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="palm_break">
+      <sprite>sprites\planet1_break_1</sprite>
+      <sprite>sprites\planet1_break_2</sprite>
+      <sprite>sprites\planet1_break_3</sprite>
+      <sprite>sprites\planet1_break_4</sprite>
+      <sprite>sprites\planet1_break_5</sprite>
+      <sprite>sprites\planet1_break_6</sprite>
+      <sprite>sprites\planet1_break_7</sprite>
+    </sprites>
     <sprites name="Cosmetics">
       <sprite>sprites\spr_fedora</sprite>
+      <sprite>sprites\spr_eyes</sprite>
     </sprites>
     <sprite>sprites\spr_planet_palm</sprite>
     <sprite>sprites\spr_planet_palm_small</sprite>
@@ -46,7 +56,9 @@
     </sprites>
     <sprites name="Powerfubs">
       <sprite>sprites\spr_quartz_1</sprite>
+      <sprite>sprites\spr_field</sprite>
     </sprites>
+    <sprite>sprites\spr_flame_blue</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -56,6 +68,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <objects name=" Planets">
+      <object>objects\obj_planet_exploded_place</object>
       <object>objects\obj_planet</object>
       <object>objects\obj_planet_palm</object>
     </objects>
@@ -77,7 +90,6 @@
       <object>objects\FULLSCREENBITCH</object>
     </objects>
     <object>objects\obj_player_ast</object>
-    <object>objects\obj_quartz_1</object>
     <object>objects\obj_ast</object>
     <objects name="GUI">
       <object>objects\obj_words</object>
@@ -96,10 +108,19 @@
       <objects name="Hats">
         <object>objects\obj_hat_place</object>
       </objects>
+      <objects name="Eyes">
+        <object>objects\obj_eyes_obj</object>
+      </objects>
+      <object>objects\obj_flame_place</object>
     </objects>
     <objects name="Camera">
       <object>objects\obj_camera_p1</object>
       <object>objects\obj_camera_p2</object>
+      <object>objects\object34</object>
+    </objects>
+    <objects name="Powerups">
+      <object>objects\obj_field</object>
+      <object>objects\obj_quartz_1</object>
     </objects>
   </objects>
   <rooms name="rooms">

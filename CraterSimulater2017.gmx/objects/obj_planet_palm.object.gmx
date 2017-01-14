@@ -8,6 +8,114 @@
   <parentName>obj_planet</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="4" ename="obj_player_2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(other.speed &gt; 1 &amp;&amp; other.mass &gt; 50){    
+    pl1 = instance_create(x, y, obj_planet_exploded_place);
+    pl1.sprite = planet1_break_1;
+    pl1.speed = 1
+    pl1.direction = 90
+    pl2 = instance_create(x, y, obj_planet_exploded_place);
+    pl2.sprite = planet1_break_2;
+    pl2.speed = 1
+    pl2.direction = 120
+    pl3 = instance_create(x, y, obj_planet_exploded_place);
+    pl3.sprite = planet1_break_3;
+    pl3.speed = 1
+    pl3.direction = 45
+    pl4 = instance_create(x, y, obj_planet_exploded_place);
+    pl4.sprite = planet1_break_4;
+    pl4.speed = 1
+    pl4.direction = 80
+    pl5 = instance_create(x, y, obj_planet_exploded_place);
+    pl5.sprite = planet1_break_5;
+    pl5.speed = 1
+    pl5.direction = 0
+    pl6 = instance_create(x, y, obj_planet_exploded_place);
+    pl6.sprite = planet1_break_6;
+    pl6.speed = 1
+    pl6.direction = 290
+    pl7 = instance_create(x, y, obj_planet_exploded_place);
+    pl7.sprite = planet1_break_7;
+    pl7.speed = 1
+    pl7.direction = 260
+    visible = false
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player_1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(other.speed &gt; 1 &amp;&amp; other.mass &gt; 50){    
+    pl1 = instance_create(x, y, obj_planet_exploded_place);
+    pl1.sprite = planet1_break_1;
+    pl1.speed = 1
+    pl1.direction = 90
+    pl2 = instance_create(x, y, obj_planet_exploded_place);
+    pl2.sprite = planet1_break_2;
+    pl2.speed = 1
+    pl2.direction = 120
+    pl3 = instance_create(x, y, obj_planet_exploded_place);
+    pl3.sprite = planet1_break_3;
+    pl3.speed = 1
+    pl3.direction = 45
+    pl4 = instance_create(x, y, obj_planet_exploded_place);
+    pl4.sprite = planet1_break_4;
+    pl4.speed = 1
+    pl4.direction = 80
+    pl5 = instance_create(x, y, obj_planet_exploded_place);
+    pl5.sprite = planet1_break_5;
+    pl5.speed = 1
+    pl5.direction = 0
+    pl6 = instance_create(x, y, obj_planet_exploded_place);
+    pl6.sprite = planet1_break_6;
+    pl6.speed = 1
+    pl6.direction = 290
+    pl7 = instance_create(x, y, obj_planet_exploded_place);
+    pl7.sprite = planet1_break_7;
+    pl7.speed = 1
+    pl7.direction = 260
+    visible = false
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>

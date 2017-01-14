@@ -36,6 +36,12 @@ haccel = 1;
 
 hat = instance_create(x, y, obj_hat_place)
 hat.depth = -1;
+
+eyes = instance_create(x, y, obj_eyes_obj)
+eyes.depth = -2;
+
+flame = instance_create(x, y, obj_flame_place)
+flame.depth = -3;
 </string>
           </argument>
         </arguments>
@@ -151,8 +157,30 @@ hat.depth = -1;
     hat.image_yscale = image_yscale;
     hat.image_angle = image_angle;
     
+    eyes.x = x;
+    eyes.y = y;
+    eyes.image_xscale = image_xscale;
+    eyes.image_yscale = image_yscale;
+    eyes.image_angle = image_angle;
+    
+    flame.x = x;
+    flame.y = y;
+    flame.image_xscale = image_xscale;
+    flame.image_yscale = image_yscale;
+    flame.image_angle = image_angle;
+    
 }else{
     speed = 0;
+    if(view_wview &lt; room_width){
+        view_wview += 20;
+        view_hview += 20;
+        view_xview -= 10;
+        view_yview -= 10;
+    }
+    visible = false;
+    eyes.visible = false;
+    hat.visible = false;
+    flame.visible = false;
 }
 </string>
           </argument>
