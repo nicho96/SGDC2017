@@ -14,11 +14,6 @@
     rx = random(room_width);
     ry = random(room_height);
     obj = instance_create(rx, ry, obj_ast);
-    scale = (random(5) + 5) / 100
-    obj.image_xscale = scale
-    obj.image_yscale = scale
-    obj.speed = random(10) / 10
-    obj.direction = random(360)
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

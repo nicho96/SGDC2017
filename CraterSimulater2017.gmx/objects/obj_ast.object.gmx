@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotspeed = random(10) / 10
+            <string>rotspeed = random(10) / 10;
+mass = random(5) + 5;
+scale = mass / 100
+image_xscale = scale;
+image_yscale = scale;
+direction = random(360);
+speed = random(10) / 10;
 </string>
           </argument>
         </arguments>
@@ -48,11 +54,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>back_y = min(instance_find(obj_player_1, 0).y, instance_find(obj_player_2, 0));
+            <string>back_y = min(instance_find(obj_player_1, 0).y, instance_find(obj_player_2, 0).y);
 
 if(y + 400 &lt; back_y){
     instance_destroy()
-    show_debug_message("DESPAWNED")
 }
 
 image_angle = (image_angle + rotspeed) % 360

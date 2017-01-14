@@ -8,13 +8,14 @@
     <sound>sound\snd_secret</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_planet_palm</sprite>
+    <sprite>sprites\spr_planet_palm_small</sprite>
     <sprites name="Players">
       <sprite>sprites\spr_ast1</sprite>
       <sprite>sprites\spr_ast2</sprite>
       <sprite>sprites\spr_ast3</sprite>
       <sprite>sprites\spr_ast4</sprite>
       <sprite>sprites\spr_ast5</sprite>
-      <sprite>sprites\spr_planet_palm</sprite>
       <sprite>sprites\spr_done</sprite>
     </sprites>
     <sprites name="GUI">
@@ -25,6 +26,12 @@
       <sprite>sprites\spr_menubar</sprite>
       <sprite>sprites\spr_ybar</sprite>
       <sprite>sprites\spr_words</sprite>
+      <sprite>sprites\spr_health_center_p1</sprite>
+      <sprite>sprites\spr_health_top_p1</sprite>
+      <sprite>sprites\spr_health_center_p2</sprite>
+      <sprite>sprites\spr_health_top_p2</sprite>
+      <sprite>sprites\spr_health_back_p2</sprite>
+      <sprite>sprites\spr_health_back_p1</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
