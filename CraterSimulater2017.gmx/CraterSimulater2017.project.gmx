@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite2</sprite>
     <sprites name="Players">
       <sprite>sprites\spr_ast1</sprite>
       <sprite>sprites\spr_ast2</sprite>
@@ -16,6 +15,8 @@
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_center_bar</sprite>
+      <sprite>sprites\spr_marker_red</sprite>
+      <sprite>sprites\spr_marker_blue</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
