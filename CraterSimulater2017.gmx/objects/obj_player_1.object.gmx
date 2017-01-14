@@ -187,6 +187,34 @@ flame.depth = -3;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_quartz_1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mass += other.mass * 0.1 //10% of mass is transfered
+speed -= other.mass / 100
+instance_create(other.x, other.y, obj_part_group_purp);
+with(other){
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_ast">
       <action>
         <libid>1</libid>
@@ -211,34 +239,6 @@ flame.depth = -3;
     with(other){
         instance_destroy();
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_quartz_1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>mass += other.mass * 0.1 //10% of mass is transfered
-speed -= other.mass / 100
-instance_create(other.x, other.y, obj_part_group_purp);
-with(other){
-    instance_destroy();
 }
 </string>
           </argument>
