@@ -24,8 +24,8 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\test2</object>
-    <object>objects\test</object>
+    <object>objects\obj_player_1</object>
+    <object>objects\obj_player_2</object>
     <objects name="Players">
       <object>objects\obj_ast1</object>
       <object>objects\obj_ast2</object>
@@ -38,6 +38,7 @@
       <object>objects\obj_p1marker</object>
       <object>objects\obj_p2marker</object>
     </objects>
+    <object>objects\obj_ast</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
