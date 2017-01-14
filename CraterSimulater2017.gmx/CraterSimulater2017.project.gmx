@@ -8,6 +8,9 @@
     <sound>sound\snd_secret</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Cosmetics">
+      <sprite>sprites\spr_fedora</sprite>
+    </sprites>
     <sprite>sprites\spr_planet_palm</sprite>
     <sprite>sprites\spr_planet_palm_small</sprite>
     <sprites name="Players">
@@ -41,6 +44,9 @@
       <sprite>sprites\spr_part_purp_5</sprite>
       <sprite>sprites\spr_part_purp_6</sprite>
     </sprites>
+    <sprites name="Powerfubs">
+      <sprite>sprites\spr_quartz_1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -71,6 +77,7 @@
       <object>objects\FULLSCREENBITCH</object>
     </objects>
     <object>objects\obj_player_ast</object>
+    <object>objects\obj_quartz_1</object>
     <object>objects\obj_ast</object>
     <objects name="GUI">
       <object>objects\obj_words</object>
@@ -85,7 +92,12 @@
       <object>objects\obj_part</object>
       <object>objects\obj_part_group_purp</object>
     </objects>
-    <objects name="Cameras">
+    <objects name="Cosmetics">
+      <objects name="Hats">
+        <object>objects\obj_hat_place</object>
+      </objects>
+    </objects>
+    <objects name="Camera">
       <object>objects\obj_camera_p1</object>
       <object>objects\obj_camera_p2</object>
     </objects>
