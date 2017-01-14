@@ -65,6 +65,23 @@ haccel = 1;
     key_down = keyboard_check(ord('K')) || gamepad_button_check(1, gp_padd);
     key_left = keyboard_check(ord('J')) || gamepad_button_check(1, gp_padl);
     key_right = keyboard_check(ord('L')) || gamepad_button_check(1, gp_padr);
+    key_up = keyboard_check_pressed(ord('I')) || gamepad_button_check_pressed(1, gp_face1);
+    
+    if(key_up &amp;&amp; mass &gt; 50){
+        //Asteroid
+        ast = instance_create(x, y - 25, obj_player_ast);
+        ast.mass = 10;
+        ast.scale = 0.2;
+        ast.image_xscale = ast.scale;
+        ast.image_yscale = ast.scale;
+        ast.direction = 90;
+        ast.speed = 10;
+        ast.parent = 1;
+        
+        //Self
+        mass -= 10;
+        speed += 1;
+    }
     
     //set deadzone for analog
     gamepad_set_axis_deadzone(0, 0.25);
@@ -150,10 +167,13 @@ haccel = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mass += other.mass * 0.1 //10% of mass is transfered
-speed -= other.mass / 100
-with(other){
-    instance_destroy();
+            <string>if(other.parent != 1){
+    mass += other.mass * 0.1 //10% of mass is transfered
+    speed -= other.mass / 100
+    instance_create(other.x, other.y, obj_part_group_purp);
+    with(other){
+        instance_destroy();
+    }
 }
 </string>
           </argument>
@@ -207,6 +227,9 @@ width = speed / 20 * 300;
 draw_sprite(spr_health_back_p1, -1, 10 , 10);
 draw_sprite_part(spr_health_center_p1, -1, 0, 0, width, 70, 10 , 10);
 draw_sprite(spr_health_top_p1, -1, 10 , 10);
+
+draw_set_color(c_white);
+draw_text(10, 10, mass);
 </string>
           </argument>
         </arguments>

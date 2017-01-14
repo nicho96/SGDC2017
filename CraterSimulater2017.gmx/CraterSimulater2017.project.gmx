@@ -33,6 +33,14 @@
       <sprite>sprites\spr_health_back_p2</sprite>
       <sprite>sprites\spr_health_back_p1</sprite>
     </sprites>
+    <sprites name="Particles">
+      <sprite>sprites\spr_part_purp_1</sprite>
+      <sprite>sprites\spr_part_purp_2</sprite>
+      <sprite>sprites\spr_part_purp_3</sprite>
+      <sprite>sprites\spr_part_purp_4</sprite>
+      <sprite>sprites\spr_part_purp_5</sprite>
+      <sprite>sprites\spr_part_purp_6</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -55,15 +63,27 @@
       <object>objects\obj_ast5</object>
     </objects>
     <objects name="Functional">
+      <object>objects\obj_spawn_ast</object>
       <object>objects\obj_center_line</object>
       <object>objects\obj_p1marker</object>
       <object>objects\obj_p2marker</object>
       <object>objects\obj_menu_controller</object>
       <object>objects\FULLSCREENBITCH</object>
     </objects>
+    <object>objects\obj_player_ast</object>
     <object>objects\obj_ast</object>
     <objects name="GUI">
       <object>objects\obj_words</object>
+    </objects>
+    <objects name="Particles">
+      <object>objects\obj_part_purp_1</object>
+      <object>objects\obj_part_purp_2</object>
+      <object>objects\obj_part_purp_3</object>
+      <object>objects\obj_part_purp_4</object>
+      <object>objects\obj_part_purp_5</object>
+      <object>objects\obj_part_purp_6</object>
+      <object>objects\obj_part</object>
+      <object>objects\obj_part_group_purp</object>
     </objects>
   </objects>
   <rooms name="rooms">

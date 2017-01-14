@@ -65,7 +65,23 @@ haccel = 1;
     key_down = keyboard_check(ord('S')) || gamepad_button_check(0, gp_padd);
     key_left = keyboard_check(ord('A')) || gamepad_button_check(0, gp_padl);
     key_right = keyboard_check(ord('D')) || gamepad_button_check(0, gp_padr);
+    key_up = keyboard_check_pressed(ord('W')) || gamepad_button_check_pressed(0, gp_face1);
     
+    if(key_up &amp;&amp; mass &gt; 50){
+        //Asteroid
+        ast = instance_create(x, y - 25, obj_player_ast);
+        ast.mass = 10;
+        ast.scale = 0.2;
+        ast.image_xscale = ast.scale;
+        ast.image_yscale = ast.scale;
+        ast.direction = 90;
+        ast.speed = 10;
+        ast.parent = 2;
+        
+        //Self
+        mass -= 10;
+        speed += mass / (mass + 10) * 2;
+    }
     //set deadzone for analog
     gamepad_set_axis_deadzone(0, 0.25);
     
@@ -148,10 +164,12 @@ haccel = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mass += other.mass * 0.1 //10% of mass is transfered
-speed -= other.mass / 100
-with(other){
-    instance_destroy();
+            <string>if(other.parent != 2){
+    mass += other.mass * 0.1 //10% of mass is transfered
+    speed -= other.mass / 100
+    with(other){
+        instance_destroy();
+    }
 }
 </string>
           </argument>
