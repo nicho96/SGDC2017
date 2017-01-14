@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_fedora, 0, x, y, image_xscale / 3, image_yscale / 3, image_angle, c_white, 1);
+            <string>y = obj_player_1.y + 200;
+x = obj_player_1.x;
 </string>
           </argument>
         </arguments>
