@@ -96,7 +96,7 @@ if(key_down){
 //Room selection
 if(key_action){
     if(bar_pos == 3){
-        room_goto(rm_setup);
+        room_goto(rm_main);
         audio_stop_all();
     }
     if(bar_pos == 2){

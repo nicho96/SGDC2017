@@ -14,6 +14,8 @@
       <sprite>sprites\spr_ast3</sprite>
       <sprite>sprites\spr_ast4</sprite>
       <sprite>sprites\spr_ast5</sprite>
+      <sprite>sprites\spr_planet_palm</sprite>
+      <sprite>sprites\spr_done</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_center_bar</sprite>
@@ -32,6 +34,10 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <objects name=" Planets">
+      <object>objects\obj_planet</object>
+      <object>objects\obj_planet_palm</object>
+    </objects>
     <object>objects\obj_player_1</object>
     <object>objects\obj_player_2</object>
     <objects name="Players">

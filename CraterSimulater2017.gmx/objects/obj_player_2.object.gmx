@@ -28,6 +28,8 @@
             <string>speed = 12
 direction = 270
 
+isFinished = false
+
 hspd = 0;
 movespeed = 15;
 hfriction = .2;
@@ -108,7 +110,7 @@ image_angle = (image_angle + 1) % 360
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="0">
+    <event eventtype="4" ename="obj_planet_palm">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -125,7 +127,31 @@ image_angle = (image_angle + 1) % 360
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_wrap(true, false, sprite_width);
+            <string>isFinished = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(isFinished)
+    draw_sprite_ext(spr_done, 0, 660, 290, 1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>
