@@ -85,6 +85,10 @@
       <object>objects\obj_part</object>
       <object>objects\obj_part_group_purp</object>
     </objects>
+    <objects name="Cameras">
+      <object>objects\obj_camera_p1</object>
+      <object>objects\obj_camera_p2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mmenu</room>
