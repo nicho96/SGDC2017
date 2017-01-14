@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = obj_player_1.y + 200;
-x = obj_player_1.x;
+            <string>x = obj_player_1.x;
+y = obj_player_1.y + 200;
 </string>
           </argument>
         </arguments>

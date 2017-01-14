@@ -97,6 +97,10 @@
         <object>objects\obj_hat_place</object>
       </objects>
     </objects>
+    <objects name="Camera">
+      <object>objects\obj_camera_p1</object>
+      <object>objects\obj_camera_p2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mmenu</room>
