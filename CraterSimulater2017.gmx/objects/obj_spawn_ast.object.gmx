@@ -53,7 +53,12 @@ if(lastSpawnY &lt; spawnY &amp;&amp; spawnY &lt; room_height){
     for(i = 0; i &lt; 25; i++){
         rx = random(room_width);
         ry = random(600) + spawnY + 800;
-        obj = instance_create(rx, ry, obj_ast);
+        r = floor(random(25))
+        if(r == 1){
+            obj = instance_create(rx, ry, obj_quartz_1);
+        }else{
+            obj = instance_create(rx, ry, obj_ast);
+        }
     }
     lastSpawnY = spawnY + 800;
 }

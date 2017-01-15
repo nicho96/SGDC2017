@@ -205,9 +205,8 @@ flame.owner = self
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mass += other.mass * 0.1 //10% of mass is transfered
-speed -= other.mass / 100
-instance_create(other.x, other.y, obj_part_group_purp);
+            <string>speed -= 0.5
+//instance_create(other.x, other.y, obj_part_group_purp);
 with(other){
     instance_destroy();
 }
@@ -233,10 +232,25 @@ with(other){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.parent != 1){
-    mass += other.mass * 0.1 //10% of mass is transfered
-    speed -= other.mass / 100
-    instance_create(other.x, other.y, obj_part_group_purp);
+            <string>if(other.parent != 2){
+    if(other.mass &gt; 0.75 * mass){
+        speed -= 0.5;
+    }else{
+        mass += other.mass * 0.1 //10% of mass is transfered
+        speed -= other.mass / 100
+        if(mass &lt; 40){
+            mass = 40;
+        }else if(mass &gt; 120){
+            mass = 120;
+        }
+    }
+    
+    if(speed &lt; 4){
+        speed = 4;
+    }else if(speed &gt; 40){
+        speed = 40;
+    }
+    
     with(other){
         instance_destroy();
     }
