@@ -65,7 +65,7 @@
     <instance objName="obj_lock7" x="-128" y="-352" name="inst_30AA2292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lock8" x="-128" y="-352" name="inst_FFB7B1A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tv" x="288" y="192" name="inst_A95C02CA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_duck" x="99" y="221" name="inst_4D60F7E9" locked="0" code="" scaleX="0.354629635810852" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
+    <instance objName="obj_duck" x="291" y="411" name="inst_4D60F7E9" locked="0" code="" scaleX="0.354629635810852" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
     <instance objName="obj_eyes" x="280" y="504" name="inst_C81D2387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_kam" x="277" y="580" name="inst_3F72DD1A" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wow" x="281" y="655" name="inst_71B95450" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>

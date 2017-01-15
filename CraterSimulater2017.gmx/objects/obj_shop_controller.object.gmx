@@ -105,8 +105,8 @@ obj_tv.x = 288;
 obj_tv.y = 192;
 obj_tv.image_xscale = 0.50;
 obj_tv.image_yscale = 0.50;
-obj_duck.x = 99;
-obj_duck.y = 221;
+obj_duck.x = 291;
+obj_duck.y = 411;
 obj_duck.image_xscale = 0.35;
 obj_duck.image_yscale = 0.35;
 
@@ -217,7 +217,7 @@ if(key_action){
         if(global.tv == false){
             global.tv = true;
             global.total_quartz -= cost1;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.tv == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 1 &amp;&amp; global.total_quartz &lt; cost1)
@@ -227,7 +227,7 @@ if(key_action){
         if(global.fedora == false){
             global.fedora = true;
             global.total_quartz -= cost2;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.fedora == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 2 &amp;&amp; global.total_quartz &lt; cost1)
@@ -237,7 +237,7 @@ if(key_action){
         if(global.duck == false){
             global.duck = true;
             global.total_quartz -= cost3;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.duck == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 3 &amp;&amp; global.total_quartz &lt; cost1)
@@ -248,7 +248,7 @@ if(key_action){
         if(global.sombrero = false){
             global.sombrero = true;
             global.total_quartz -= cost4;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.sombrero == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 4 &amp;&amp; global.total_quartz &lt; cost1)
@@ -258,7 +258,7 @@ if(key_action){
         if(global.googly == false){
             global.googly = true;
             global.total_quartz -= cost5;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.googly == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 5 &amp;&amp; global.total_quartz &lt; cost1)
@@ -268,7 +268,7 @@ if(key_action){
         if(global.kamina == false){
             global.kamina = true;
             global.total_quartz -= cost6;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.kamina == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 6 &amp;&amp; global.total_quartz &lt; cost1)
@@ -278,7 +278,7 @@ if(key_action){
         if(global.wow == false){
             global.wow = true;
             global.total_quartz -= cost7;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.wow == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 7 &amp;&amp; global.total_quartz &lt; cost1)
@@ -288,7 +288,7 @@ if(key_action){
         if(global.meow == false){
             global.meow = true;
             global.total_quartz -= cost8;
-            audio_play_sound(snd_secret, 1, false);
+            audio_play_sound(snd_cash_buy, 1, false);
         }else if(global.meow == true)
             audio_play_sound(snd_menu_error, 1, false);
     }else if(box_pos == 8 &amp;&amp; global.total_quartz &lt; cost1)

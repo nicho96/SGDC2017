@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!audio_is_playing(snd_secret)){
-    audio_stop_sound(snd_lobby);
-    audio_play_sound(snd_secret,1,true);
-}
+            <string>//if(!audio_is_playing(snd_secret)){
+    audio_stop_all();
+    audio_play_sound(snd_main_menu,1,true);
+//}
 depth = 100;
 
 bar_pos = 3;

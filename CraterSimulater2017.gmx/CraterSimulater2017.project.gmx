@@ -45,6 +45,9 @@
     <sound>sound\snd_lobby</sound>
     <sound>sound\snd_menu_error</sound>
     <sound>sound\snd_menu_move</sound>
+    <sound>sound\snd_main_menu</sound>
+    <sound>sound\snd_cash_buy</sound>
+    <sound>sound\snd_readycheck</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Cosmetics">
@@ -139,6 +142,7 @@
       <sprite>sprites\spr_arrows</sprite>
       <sprite>sprites\spr_go</sprite>
       <sprite>sprites\spr_roids</sprite>
+      <sprite>sprites\spr_nothing</sprite>
     </sprites>
     <sprites name="tor_break">
       <sprite>sprites\spr_planet2_break1</sprite>
@@ -256,6 +260,20 @@
         <object>objects\obj_p1_skin_3</object>
         <object>objects\obj_p1_skin_4</object>
       </objects>
+      <objects name="p1 hats">
+        <object>objects\obj_p1_hat</object>
+        <object>objects\obj_p1_hat_0</object>
+        <object>objects\obj_p1_hat_1</object>
+        <object>objects\obj_p1_hat_2</object>
+        <object>objects\obj_p1_hat_3</object>
+      </objects>
+      <objects name="p1 glasses">
+        <object>objects\obj_p1_glasses</object>
+        <object>objects\obj_p1_glasses_0</object>
+        <object>objects\obj_p1_glasses_1</object>
+        <object>objects\obj_p1_glasses_3</object>
+        <object>objects\obj_p1_glasses_2</object>
+      </objects>
     </objects>
     <objects name="Shop Room">
       <object>objects\obj_panels</object>
@@ -284,6 +302,7 @@
     <room>rooms\rm_main</room>
     <room>rooms\rm_select</room>
     <room>rooms\rm_shop</room>
+    <room>rooms\rm_creds</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
