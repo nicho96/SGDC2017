@@ -33,7 +33,8 @@ hspd = 0;
 movespeed = 15;
 hfriction = .2;
 haccel = 1;
-
+field = false;
+multiplier = false;
 hat = instance_create(x, y, obj_hat_place)
 hat.depth = -1;
 
@@ -44,6 +45,52 @@ flame = instance_create(x, y, obj_flame_place)
 flame.depth = -3;
 flame.owner = self
 quartz = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>multiplier = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>field = false;
 </string>
           </argument>
         </arguments>
@@ -212,6 +259,8 @@ with(other){
     instance_destroy();
 }
 quartz++;
+multiplier = true;
+alarm[1] = room_speed * 2;
 </string>
           </argument>
         </arguments>
@@ -239,7 +288,8 @@ quartz++;
 with(other){
     instance_destroy();
 }
-quartz++;
+field = true;
+alarm[0] = room_speed * 1;
 </string>
           </argument>
         </arguments>
@@ -262,25 +312,47 @@ quartz++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.parent != 2){
-    if(other.mass &gt; mass){
-        speed -= 0.5;
-    }else{
-        mass += other.mass * 0.1 //10% of mass is transfered
+            <string>if(other.parent != 1){
+    if(field){
+        add = other.mass * 0.1
+        if(multiplier){
+            add = add * 1.5;
+        }
+        mass += add //10% of mass is transfered
         speed -= other.mass / 100
         if(mass &lt; 40){
             mass = 40;
         }else if(mass &gt; 120){
-            mass = 120;
+           mass = 120;
+        }
+        if(speed &lt; 4){
+            speed = 4;
+        }else if(speed &gt; 40){
+            speed = 40;
+        }
+    }else{
+        if(other.mass &gt; mass){
+            speed -= 0.5;
+        }else{
+           add = other.mass * 0.1
+            if(multiplier){
+                add = add * 1.5;
+            }
+            mass += add //10% of mass is transfered
+            speed -= other.mass / 100
+            if(mass &lt; 40){
+                mass = 40;
+            }else if(mass &gt; 120){
+                mass = 120;
+            }
+        }
+        
+        if(speed &lt; 4){
+            speed = 4;
+        }else if(speed &gt; 40){
+            speed = 40;
         }
     }
-    
-    if(speed &lt; 4){
-        speed = 4;
-    }else if(speed &gt; 40){
-        speed = 40;
-    }
-    
     with(other){
         instance_destroy();
     }
@@ -337,6 +409,14 @@ width = speed / 20 * 300;
 draw_sprite(spr_health_back_p1, -1, 10 , 10);
 draw_sprite_part(spr_health_center_p1, -1, 0, 0, width, 70, 10 , 10);
 draw_sprite(spr_health_top_p1, -1, 10 , 10);
+
+if(field){
+    draw_sprite_ext(spr_magnet, -1, 550, 10, 0.5, 0.5, 0, c_white, 1);
+}
+
+if(multiplier){
+    draw_sprite_ext(spr_2x, -1, 490, 10, 0.5, 0.5, 0, c_white, 1);
+}
 
 draw_set_color(c_white);
 draw_text(10, 10, mass);

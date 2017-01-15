@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_secret</sound>
+    <sound>sound\snd_lobby</sound>
+    <sound>sound\sound2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="palm_break">
@@ -62,6 +64,8 @@
     <sprites name="Powerfubs">
       <sprite>sprites\spr_quartz_1</sprite>
       <sprite>sprites\spr_field</sprite>
+      <sprite>sprites\spr_magnet</sprite>
+      <sprite>sprites\spr_2x</sprite>
     </sprites>
     <sprite>sprites\spr_flame_blue</sprite>
     <sprites name="Flames">
@@ -147,7 +151,6 @@
     </objects>
     <objects name="Camera">
       <object>objects\obj_camera_p1</object>
-      <object>objects\object34</object>
       <object>objects\obj_camera_p2</object>
     </objects>
     <objects name="Powerups">
