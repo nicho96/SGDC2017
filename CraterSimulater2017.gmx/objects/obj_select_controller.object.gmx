@@ -8,6 +8,33 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p1_bar_pos = 1;
+p1_ready = false;
+
+p2_bar_pos = 1;
+p2_ready = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -41,26 +68,43 @@ p2_key_left = keyboard_check_pressed(vk_left) ||  gamepad_button_check_pressed(1
 p2_key_return = keyboard_check_pressed(vk_backspace) || gamepad_button_check_pressed(1, gp_face2);
 p2_key_action = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(1, gp_face1);
 
-if(p1_highlight == 1){
-    p1bar.x = p1bar1x;
-    p1bar.y = p1bar1y;
-    p1bar.image_xscale = 1;
-    p1bar.image_xscale = 1;
-}else if(p1_highlight == 2){
-    p1bar.x = p1bar2x;
-    p1bar.y = p1bar2x;
-    p1bar.image_xscale = 1;
-    p1bar.image_yscale = 1;
-}else if(p1_highlight == 3){
-    p1bar.x = p1bar3x;
-    p1bar.y = p1bar3y;
-    p1bar.image_xscale = 1;
-    p1bar.image_yscale = 1;
+//return to menu
+if(!p1_ready){
+    if(p1_key_return)
+        room_goto(rm_mmenu);
+}
+//Moving left highlight bar
+if(p1_bar_pos == 1){
+    obj_p1bar.x = 362;
+    obj_p1bar.y = 195;
+    obj_p1bar.image_xscale = .58;
+    obj_p1bar.image_xscale = .62;
+}else if(p1_bar_pos == 2){
+    obj_p1bar.x = 363;
+    obj_p1bar.y = 400;
+    obj_p1bar.image_xscale = .56;
+    obj_p1bar.image_yscale = .55;
+}else if(p1_bar_pos == 3){
+    obj_p1bar.x = 357;
+    obj_p1bar.y = 566;
+    obj_p1bar.image_xscale = .64;
+    obj_p1bar.image_yscale = .33;
 }else{
-    p1bar.x = p1bar4x;
-    p1bar.y = p1bar4y;
-    p1bar.image_xscale = 1;
-    p1bar.image_yscale = 1;    
+    obj_p1bar.x = 360;
+    obj_p1bar.y = 655;
+    obj_p1bar.image_xscale = .27;
+    obj_p1bar.image_yscale = .28;    
+}
+
+//Changing selection (No wrapping)
+if(p1_key_down){
+    if (p1_bar_pos &lt; 4)
+        p1_bar_pos ++;
+}
+
+if(p1_key_up){
+    if (p1_bar_pos &gt; 1)
+        p1_bar_pos --;
 }
 
 

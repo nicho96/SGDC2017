@@ -21,6 +21,5 @@
   <height>464</height>
   <frames>
     <frame index="0">images\spr_highlight_0.png</frame>
-    <frame index="1">images\spr_highlight_1.png</frame>
   </frames>
 </sprite>

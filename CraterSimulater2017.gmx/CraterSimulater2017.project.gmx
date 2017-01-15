@@ -98,6 +98,7 @@
       <sprite>sprites\spr_highlight</sprite>
       <sprite>sprites\spr_bubbles</sprite>
       <sprite>sprites\spr_arrows</sprite>
+      <sprite>sprites\spr_go</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -134,6 +135,7 @@
       <object>objects\obj_game_controller</object>
       <object>objects\obj_shop_controller</object>
       <object>objects\obj_select_controller</object>
+      <object>objects\obj_initialize</object>
     </objects>
     <object>objects\obj_ast</object>
     <objects name="GUI">
@@ -171,9 +173,12 @@
       <object>objects\obj_highlight</object>
       <object>objects\obj_bubbles</object>
       <object>objects\obj_arrows</object>
+      <object>objects\obj_go</object>
+      <object>objects\obj_p1bar</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_initial</room>
     <room>rooms\rm_mmenu</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_select</room>

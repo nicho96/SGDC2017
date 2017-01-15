@@ -261,6 +261,8 @@ with(other){
 quartz++;
 multiplier = true;
 alarm[1] = room_speed * 2;
+
+global.total_quartz ++;
 </string>
           </argument>
         </arguments>
