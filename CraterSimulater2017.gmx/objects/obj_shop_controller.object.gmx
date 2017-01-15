@@ -58,47 +58,89 @@ key_left = keyboard_check_pressed(ord('A')) || gamepad_button_check_pressed(0, g
 key_return = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_face2) || keyboard_check_pressed(vk_backspace) || gamepad_button_check_pressed(1, gp_face2);
 key_action = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(1, gp_face1);
 
+obj_lock1.x = 128;
+obj_lock1.y = 114;
+obj_lock1.image_xscale = 0.30;
+obj_lock1.image_yscale = 0.30;
+obj_lock2.x = 403;
+obj_lock2.y = 106;
+obj_lock2.image_xscale = 0.30;
+obj_lock2.image_yscale = 0.30;
+obj_lock3.x = 114;
+obj_lock3.y = 290;
+obj_lock3.image_xscale = 0.30;
+obj_lock3.image_yscale = 0.30;
+obj_lock4.x = 407;
+obj_lock4.y = 300;
+obj_lock4.image_xscale = 0.30;
+obj_lock4.image_yscale = 0.30;
+obj_lock5.x = 114;
+obj_lock5.y = 461;
+obj_lock5.image_xscale = 0.30;
+obj_lock5.image_yscale = 0.30;
+obj_lock6.x = 114;
+obj_lock6.y = 542;
+obj_lock6.image_xscale = 0.30;
+obj_lock6.image_yscale = 0.30;
+obj_lock7.x = 114;
+obj_lock7.y = 614;
+obj_lock7.image_xscale = 0.30;
+obj_lock7.image_yscale = 0.30;
+obj_lock8.x = 399;
+obj_lock8.y = 494;
+obj_lock8.image_xscale = 0.30;
+obj_lock8.image_yscale = 0.30;
+obj_tv.x = 288;
+obj_tv.y = 192;
+obj_tv.image_xscale = 0.50;
+obj_tv.image_yscale = 0.50;
+obj_duck.x = 99;
+obj_duck.y = 221;
+obj_duck.image_xscale = 0.35;
+obj_duck.image_yscale = 0.35;
+
+
 //Moving underlay
 if(box_pos == 1){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 101;
+    obj_underlay.y = 46;
+    obj_underlay.image_xscale = 0.83;
+    obj_underlay.image_yscale = 0.74;
 }else if(box_pos == 2){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 365;
+    obj_underlay.y = 39;
+    obj_underlay.image_xscale = 0.83;
+    obj_underlay.image_yscale = 0.74;
 }else if(box_pos == 3){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 103;
+    obj_underlay.y = 235;
+    obj_underlay.image_xscale = 0.77;
+    obj_underlay.image_yscale = 0.68;
 }else if(box_pos == 4){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 383;
+    obj_underlay.y = 233;
+    obj_underlay.image_xscale = 0.78;
+    obj_underlay.image_yscale = 0.73;
 }else if(box_pos == 5){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 94;
+    obj_underlay.y = 437;
+    obj_underlay.image_xscale = 0.79;
+    obj_underlay.image_yscale = 0.31;
 }else if(box_pos == 6){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 101;
+    obj_underlay.y = 517;
+    obj_underlay.image_xscale = 0.76;
+    obj_underlay.image_yscale = 0.31;
 }else if(box_pos == 7){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 102;
+    obj_underlay.y = 596;
+    obj_underlay.image_xscale = 0.73;
+    obj_underlay.image_yscale = 0.27;
 }else if(box_pos == 8){
-    y = 0;
-    x = 0;
-    image_xscale = 0;
-    image_yscale = 0;
+    obj_underlay.x = 366;
+    obj_underlay.y = 420;
+    obj_underlay.image_xscale = 0.81;
+    obj_underlay.image_yscale = 0.79;
 }
 
 //changing position on movement
