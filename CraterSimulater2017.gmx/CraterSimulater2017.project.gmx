@@ -10,64 +10,10 @@
     <sound>sound\sound2</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="palm_break">
-      <sprite>sprites\planet1_break_1</sprite>
-      <sprite>sprites\planet1_break_2</sprite>
-      <sprite>sprites\planet1_break_3</sprite>
-      <sprite>sprites\planet1_break_4</sprite>
-      <sprite>sprites\planet1_break_5</sprite>
-      <sprite>sprites\planet1_break_6</sprite>
-      <sprite>sprites\planet1_break_7</sprite>
-    </sprites>
     <sprites name="Cosmetics">
       <sprite>sprites\spr_fedora</sprite>
       <sprite>sprites\spr_eyes</sprite>
     </sprites>
-    <sprite>sprites\spr_planet_tor</sprite>
-    <sprite>sprites\spr_planet_palm</sprite>
-    <sprite>sprites\spr_planet_palm_small</sprite>
-    <sprites name="Players">
-      <sprite>sprites\spr_ast1</sprite>
-      <sprite>sprites\spr_ast2</sprite>
-      <sprite>sprites\spr_ast3</sprite>
-      <sprite>sprites\spr_ast4</sprite>
-      <sprite>sprites\spr_ast5</sprite>
-      <sprite>sprites\spr_done</sprite>
-      <sprites name="alt skins">
-        <sprite>sprites\spr_ast_tv</sprite>
-        <sprite>sprites\spr_alt_duck</sprite>
-      </sprites>
-    </sprites>
-    <sprites name="GUI">
-      <sprite>sprites\spr_center_bar</sprite>
-      <sprite>sprites\spr_marker_red</sprite>
-      <sprite>sprites\spr_marker_blue</sprite>
-      <sprite>sprites\spr_menu_text</sprite>
-      <sprite>sprites\spr_menubar</sprite>
-      <sprite>sprites\spr_ybar</sprite>
-      <sprite>sprites\spr_words</sprite>
-      <sprite>sprites\spr_health_center_p1</sprite>
-      <sprite>sprites\spr_health_top_p1</sprite>
-      <sprite>sprites\spr_health_center_p2</sprite>
-      <sprite>sprites\spr_health_top_p2</sprite>
-      <sprite>sprites\spr_health_back_p2</sprite>
-      <sprite>sprites\spr_health_back_p1</sprite>
-    </sprites>
-    <sprites name="Particles">
-      <sprite>sprites\spr_part_purp_1</sprite>
-      <sprite>sprites\spr_part_purp_2</sprite>
-      <sprite>sprites\spr_part_purp_3</sprite>
-      <sprite>sprites\spr_part_purp_4</sprite>
-      <sprite>sprites\spr_part_purp_5</sprite>
-      <sprite>sprites\spr_part_purp_6</sprite>
-    </sprites>
-    <sprites name="Powerfubs">
-      <sprite>sprites\spr_quartz_1</sprite>
-      <sprite>sprites\spr_field</sprite>
-      <sprite>sprites\spr_magnet</sprite>
-      <sprite>sprites\spr_2x</sprite>
-    </sprites>
-    <sprite>sprites\spr_flame_blue</sprite>
     <sprites name="Flames">
       <sprites name="Med">
         <sprite>sprites\spr_blue_mback</sprite>
@@ -94,18 +40,75 @@
         <sprite>sprites\spr_white_sfront</sprite>
       </sprites>
     </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\spr_center_bar</sprite>
+      <sprite>sprites\spr_marker_red</sprite>
+      <sprite>sprites\spr_marker_blue</sprite>
+      <sprite>sprites\spr_menu_text</sprite>
+      <sprite>sprites\spr_menubar</sprite>
+      <sprite>sprites\spr_ybar</sprite>
+      <sprite>sprites\spr_words</sprite>
+      <sprite>sprites\spr_health_center_p1</sprite>
+      <sprite>sprites\spr_health_top_p1</sprite>
+      <sprite>sprites\spr_health_center_p2</sprite>
+      <sprite>sprites\spr_health_top_p2</sprite>
+      <sprite>sprites\spr_health_back_p2</sprite>
+      <sprite>sprites\spr_health_back_p1</sprite>
+    </sprites>
+    <sprites name="Particles">
+      <sprite>sprites\spr_part_purp_1</sprite>
+      <sprite>sprites\spr_part_purp_2</sprite>
+      <sprite>sprites\spr_part_purp_3</sprite>
+      <sprite>sprites\spr_part_purp_4</sprite>
+      <sprite>sprites\spr_part_purp_5</sprite>
+      <sprite>sprites\spr_part_purp_6</sprite>
+    </sprites>
+    <sprites name="Planets">
+      <sprite>sprites\spr_planet_tor</sprite>
+      <sprite>sprites\spr_planet_palm</sprite>
+      <sprite>sprites\spr_planet_palm_small</sprite>
+      <sprites name="palm_break">
+        <sprite>sprites\planet1_break_1</sprite>
+        <sprite>sprites\planet1_break_2</sprite>
+        <sprite>sprites\planet1_break_3</sprite>
+        <sprite>sprites\planet1_break_4</sprite>
+        <sprite>sprites\planet1_break_5</sprite>
+        <sprite>sprites\planet1_break_6</sprite>
+        <sprite>sprites\planet1_break_7</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Players">
+      <sprite>sprites\spr_ast1</sprite>
+      <sprite>sprites\spr_ast2</sprite>
+      <sprite>sprites\spr_ast3</sprite>
+      <sprite>sprites\spr_done</sprite>
+      <sprite>sprites\spr_ast_tv1</sprite>
+      <sprite>sprites\spr_alt_duck1</sprite>
+    </sprites>
+    <sprites name="Powerfubs">
+      <sprite>sprites\spr_quartz_1</sprite>
+      <sprite>sprites\spr_field</sprite>
+      <sprite>sprites\spr_magnet</sprite>
+      <sprite>sprites\spr_2x</sprite>
+    </sprites>
     <sprites name="Select Sprites">
       <sprite>sprites\spr_highlight</sprite>
       <sprite>sprites\spr_bubbles</sprite>
       <sprite>sprites\spr_arrows</sprite>
       <sprite>sprites\spr_go</sprite>
     </sprites>
+    <sprites name="Shop Sprites">
+      <sprite>sprites\spr_panels</sprite>
+      <sprite>sprites\spr_underlay</sprite>
+    </sprites>
+    <sprite>sprites\spr_lock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
     <background>background\stars</background>
     <background>background\bg_mmenu</background>
     <background>background\bg_select</background>
+    <background>background\bg_shop</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -176,12 +179,27 @@
       <object>objects\obj_go</object>
       <object>objects\obj_p1bar</object>
     </objects>
+    <objects name="Shop Room">
+      <object>objects\obj_panels</object>
+      <object>objects\obj_underlay</object>
+      <object>objects\obj_lock1</object>
+      <object>objects\obj_lock2</object>
+      <object>objects\obj_lock3</object>
+      <object>objects\obj_lock4</object>
+      <object>objects\obj_lock5</object>
+      <object>objects\obj_lock6</object>
+      <object>objects\obj_lock7</object>
+      <object>objects\obj_lock8</object>
+      <object>objects\obj_duck</object>
+      <object>objects\obj_tv</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>
     <room>rooms\rm_mmenu</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_select</room>
+    <room>rooms\rm_shop</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
