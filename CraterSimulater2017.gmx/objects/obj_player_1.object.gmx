@@ -239,7 +239,7 @@ max_speed = 0;
         view_xview -= 10;
         view_yview -= 10;
     }
-    visible = false;
+    image_alpha = 0;
     eyes.visible = false;
     hat.visible = false;
     flame.visible = false;
@@ -422,10 +422,11 @@ alarm[0] = room_speed * 1;
             <kind>1</kind>
             <string>if(isFinished){
     draw_sprite_ext(spr_done, 0, 20, 290, 1, 1, 0, c_white, 1);
-    draw_set_colour(c_white);
     draw_set_font(meemz);
     draw_set_halign(fa_center);
+    draw_set_colour(c_white);
     draw_text(320, 500, "Total Damage " + string(speed * mass));
+    draw_set_colour(c_white);
     draw_text(320, 540, "Max Speed " + string(speed * mass));
     draw_text(320, 580, "Total Mass Collected " + string(total_mass));
 }
