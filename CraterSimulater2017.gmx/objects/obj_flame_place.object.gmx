@@ -49,7 +49,7 @@ owner = obj_player_1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &gt; room_height - 10000 &amp;&amp; instance_exists(obj_planet_place )){
+            <string>if(y &gt; room_height - 10000){
     dist = y - (room_height - 10000);
     alpha = dist / 10000;
     spriteF = spr_red_sfront;
@@ -89,9 +89,9 @@ owner = obj_player_1
         }
     }
     backS = draw_sprite_ext(spriteB, -1, x - 5, y - 40, image_xscale, image_yscale, 0, c_white, alpha / 2);
-    backS.depth = 1;
+    //backS.depth = 1;
     frontS = draw_sprite_ext(spriteF, -1, x - 5, y - 40, image_xscale, image_yscale, 0, c_white, alpha / 2);
-    frontS.depth = -1;
+    //frontS.depth = -1;
 }
 </string>
           </argument>

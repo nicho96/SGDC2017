@@ -43,6 +43,7 @@ eyes.depth = -2;
 flame = instance_create(x, y, obj_flame_place)
 flame.depth = -3;
 flame.owner = self
+quartz = 0;
 </string>
           </argument>
         </arguments>
@@ -210,6 +211,7 @@ flame.owner = self
 with(other){
     instance_destroy();
 }
+quartz++;
 </string>
           </argument>
         </arguments>
@@ -233,7 +235,7 @@ with(other){
           <argument>
             <kind>1</kind>
             <string>if(other.parent != 2){
-    if(other.mass &gt; 0.75 * mass){
+    if(other.mass &gt; mass){
         speed -= 0.5;
     }else{
         mass += other.mass * 0.1 //10% of mass is transfered
