@@ -10,7 +10,14 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>ast_pos_p1 = 1;//Switch to cached player pos
+ast_pos_p2 = 1;//**
+
+eyes_pos_p1 = 1;
+eyes_pos_p2 = 1;
+
+hat_pos_p1 = 1;
+hat_pos_p2 = 1;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -58,10 +65,11 @@
     <instance objName="obj_go" x="359" y="659" name="inst_8273D872" locked="0" code="" scaleX="0.292270541191101" scaleY="0.272727280855179" colour="4294967295" rotation="0"/>
     <instance objName="obj_go" x="916" y="654" name="inst_8E35BC8D" locked="0" code="" scaleX="0.28571429848671" scaleY="0.270000010728836" colour="4294967295" rotation="0"/>
     <instance objName="obj_p1bar" x="352" y="-224" name="inst_261DF40D" locked="0" code="" scaleX="0.579999983310699" scaleY="0.620000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_p1_skin_1" x="367" y="195" name="inst_8C91AD7C" locked="0" code="" scaleX="0.206845238804817" scaleY="0.244966447353363" colour="4294967295" rotation="0"/>
-    <instance objName="obj_p1_skin_2" x="369" y="194" name="inst_1156131A" locked="0" code="" scaleX="0.415041774511337" scaleY="0.481481492519379" colour="4294967295" rotation="0"/>
-    <instance objName="obj_p1_skin_3" x="373" y="189" name="inst_EFCF5983" locked="0" code="" scaleX="0.754863798618317" scaleY="0.564102590084076" colour="4294967295" rotation="0"/>
-    <instance objName="obj_p1_skin_4" x="364" y="190" name="inst_6B71C183" locked="0" code="" scaleX="0.804347813129425" scaleY="0.836601316928864" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p2bar" x="928" y="-224" name="inst_4EDC9D46" locked="0" code="" scaleX="0.579999983310699" scaleY="-0.620000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1_skin_1" x="370" y="192" name="inst_596BBB9B" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1_skin_2" x="352" y="192" name="inst_323D77DD" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1_skin_3" x="352" y="192" name="inst_61FF0E1E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1_skin_4" x="384" y="192" name="inst_F1D2BB38" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

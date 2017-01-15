@@ -369,7 +369,7 @@ alarm[0] = room_speed * 1;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_planet_palm">
+    <event eventtype="4" ename="obj_planet">
       <action>
         <libid>1</libid>
         <id>603</id>

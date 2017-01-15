@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>planet2_break.pdn</name>
+      <exists>-1</exists>
+      <size>1366322</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>planet2_break.pdn</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_secret</sound>
@@ -22,6 +41,7 @@
     <sprites name="Cosmetics">
       <sprite>sprites\spr_fedora</sprite>
       <sprite>sprites\spr_eyes</sprite>
+      <sprite>sprites\spr_kamina</sprite>
     </sprites>
     <sprite>sprites\spr_planet_tor</sprite>
     <sprite>sprites\spr_planet_palm</sprite>
@@ -52,6 +72,7 @@
       <sprite>sprites\spr_health_top_p2</sprite>
       <sprite>sprites\spr_health_back_p2</sprite>
       <sprite>sprites\spr_health_back_p1</sprite>
+      <sprite>sprites\spr_finish</sprite>
     </sprites>
     <sprites name="Particles">
       <sprite>sprites\spr_part_purp_1</sprite>
@@ -94,11 +115,24 @@
         <sprite>sprites\spr_white_sfront</sprite>
       </sprites>
     </sprites>
-    <sprites name="Select Sprites">
+    <sprites name="Roids">
       <sprite>sprites\spr_highlight</sprite>
       <sprite>sprites\spr_bubbles</sprite>
       <sprite>sprites\spr_arrows</sprite>
       <sprite>sprites\spr_go</sprite>
+      <sprite>sprites\spr_roids</sprite>
+    </sprites>
+    <sprites name="tor_break">
+      <sprite>sprites\spr_planet2_break1</sprite>
+      <sprite>sprites\spr_planet2_break2</sprite>
+      <sprite>sprites\spr_planet2_break3</sprite>
+      <sprite>sprites\spr_planet2_break4</sprite>
+      <sprite>sprites\spr_planet2_break5</sprite>
+      <sprite>sprites\spr_planet2_break6</sprite>
+      <sprite>sprites\spr_planet2_break7</sprite>
+      <sprite>sprites\spr_planet2_break8</sprite>
+      <sprite>sprites\spr_planet2_break9</sprite>
+      <sprite>sprites\spr_planet2_break10</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -175,6 +209,7 @@
       <object>objects\obj_arrows</object>
       <object>objects\obj_go</object>
       <object>objects\obj_p1bar</object>
+      <object>objects\obj_p2bar</object>
       <objects name="p1 skins">
         <object>objects\obj_p1_skin</object>
         <object>objects\obj_p1_skin_1</object>

@@ -58,7 +58,7 @@ p1_key_down = keyboard_check_pressed(ord('S')) || gamepad_button_check_pressed(0
 p1_key_right = keyboard_check_pressed(ord('D')) || gamepad_button_check_pressed(0, gp_padr);
 p1_key_left = keyboard_check_pressed(ord('A')) || gamepad_button_check_pressed(0, gp_padl);
 p1_key_return = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_face2);
-p1_key_action = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1);
+p1_key_action = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
 
 //Player 2 select screen controls (Arrow keys &amp; Controller (1))
 p2_key_up = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(1, gp_padu);
@@ -66,7 +66,7 @@ p2_key_down = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(1,
 p2_key_right = keyboard_check_pressed(vk_right) ||  gamepad_button_check_pressed(1, gp_padr);
 p2_key_left = keyboard_check_pressed(vk_left) ||  gamepad_button_check_pressed(1, gp_padl);
 p2_key_return = keyboard_check_pressed(vk_backspace) || gamepad_button_check_pressed(1, gp_face2);
-p2_key_action = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(1, gp_face1);
+p2_key_action = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(1, gp_face1);
 
 //return to menu
 if(!p1_ready){
@@ -96,6 +96,29 @@ if(p1_bar_pos == 1){
     obj_p1bar.image_yscale = .28;    
 }
 
+//Moving right highlight bar
+if(p2_bar_pos == 1){
+    obj_p2bar.x = 640 + 282;
+    obj_p2bar.y = 195;
+    obj_p2bar.image_xscale = .58;
+    obj_p2bar.image_xscale = .62;
+}else if(p2_bar_pos == 2){
+    obj_p2bar.x = 640 + 283;
+    obj_p2bar.y = 405;
+    obj_p2bar.image_xscale = .56;
+    obj_p2bar.image_yscale = .55;
+}else if(p2_bar_pos == 3){
+    obj_p2bar.x = 640 + 283;
+    obj_p2bar.y = 566;
+    obj_p2bar.image_xscale = .64;
+    obj_p2bar.image_yscale = .33;
+}else{
+    obj_p2bar.x = 640 + 275;
+    obj_p2bar.y = 655;
+    obj_p2bar.image_xscale = .27;
+    obj_p2bar.image_yscale = .28;    
+}
+
 //Changing selection (No wrapping)
 if(p1_key_down){
     if (p1_bar_pos &lt; 4) //add quiet sound on menu change
@@ -105,6 +128,16 @@ if(p1_key_down){
 if(p1_key_up){
     if (p1_bar_pos &gt; 1) //add quiet sound on menu change
         p1_bar_pos --;
+}
+
+if(p2_key_down){
+    if (p2_bar_pos &lt; 4) //add quiet sound on menu change
+        p2_bar_pos ++;
+}
+
+if(p2_key_up){
+    if (p2_bar_pos &gt; 1) //add quiet sound on menu change
+        p2_bar_pos --;
 }
 
  
@@ -145,10 +178,22 @@ if(p1_bar_pos == 3){
             global.p1_glasses = 3;
     }
 }
+
 if(p1_bar_pos == 4){
     if(p1_key_action){
-        //if(
+        p1_ready = !p1_ready;
+        p = instance_find(obj_go, 0);
+        p.visible = !p1_ready;;
     }
+    if(p2_key_action){
+        p2_ready = !p2_ready;
+        p = instance_find(obj_go, 1);
+        p.visible = !p2_ready;
+    }
+}
+
+if(p1_ready &amp;&amp; p2_ready){
+    room_goto(rm_main);
 }
 
 //sets all transparent

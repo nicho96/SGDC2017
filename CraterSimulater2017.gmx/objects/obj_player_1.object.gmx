@@ -381,7 +381,7 @@ alarm[0] = room_speed * 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>isFinished = true
+            <string>if(other.visible) isFinished = true
 </string>
           </argument>
         </arguments>
