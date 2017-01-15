@@ -45,6 +45,8 @@ flame = instance_create(x, y, obj_flame_place)
 flame.depth = -3;
 flame.owner = self
 quartz = 0;
+image_speed = 0;
+image_index = 0;
 </string>
           </argument>
         </arguments>
@@ -114,6 +116,11 @@ quartz = 0;
           <argument>
             <kind>1</kind>
             <string>if(!isFinished) {
+
+    if(quartz == 1)
+        image_index = 1;
+    if(quartz &gt; 1) 
+        image_index = 2;
 
     scale = mass / 100;
     image_xscale = scale;

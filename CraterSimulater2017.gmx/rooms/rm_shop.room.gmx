@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>780</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,6 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_fedora" x="552" y="256" name="inst_17579AEB" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="obj_panels" x="133" y="89" name="inst_D1753861" locked="0" code="" scaleX="0.812146902084351" scaleY="0.682628035545349" colour="4294967295" rotation="0"/>
     <instance objName="obj_shop_controller" x="-384" y="-96" name="inst_7A7E4CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FULLSCREENBITCH" x="-416" y="-32" name="inst_6C97FC28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -65,6 +66,11 @@
     <instance objName="obj_lock8" x="-128" y="-352" name="inst_FFB7B1A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tv" x="288" y="192" name="inst_A95C02CA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_duck" x="99" y="221" name="inst_4D60F7E9" locked="0" code="" scaleX="0.354629635810852" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eyes" x="280" y="504" name="inst_C81D2387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kam" x="277" y="580" name="inst_3F72DD1A" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wow" x="281" y="655" name="inst_71B95450" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sombre" x="488" y="313" name="inst_C1BE2D15" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
+    <instance objName="obj_meow" x="397" y="499" name="inst_B3B57982" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

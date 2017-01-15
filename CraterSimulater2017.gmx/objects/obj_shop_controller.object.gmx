@@ -196,14 +196,14 @@ if(key_left){
         box_pos = 5;     
 }
 
-cost1 = 2;
+cost1 = 1;
 cost2 = 1;
-cost3 = 3;
-cost4 = 2;
+cost3 = 1;
+cost4 = 1;
 cost5 = 1;
-cost6 = 2;
-cost7 = 3;
-cost8 = 3;
+cost6 = 1;
+cost7 = 1;
+cost8 = 1;
 
 if(key_action){
     if(box_pos == 1 &amp;&amp; global.total_quartz &gt;= cost1){

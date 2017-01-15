@@ -36,7 +36,7 @@ global.p2_skin = 1;
 global.p2_glasses = 0;
 global.p2_hat = 0;
 
-        //Unlocks
+//Unlocks
 //Skins
 global.tv = false;
 global.duck = false;

@@ -33,6 +33,9 @@
       <sprite>sprites\spr_fedora</sprite>
       <sprite>sprites\spr_eyes</sprite>
       <sprite>sprites\spr_kamina</sprite>
+      <sprite>sprites\spr_wow</sprite>
+      <sprite>sprites\spr_meow</sprite>
+      <sprite>sprites\spr_sombrero</sprite>
     </sprites>
     <sprites name="Flames">
       <sprites name="Med">
@@ -233,7 +236,13 @@
       <object>objects\obj_lock7</object>
       <object>objects\obj_lock8</object>
       <object>objects\obj_duck</object>
+      <object>objects\obj_fedora</object>
+      <object>objects\obj_eyes</object>
       <object>objects\obj_tv</object>
+      <object>objects\obj_kam</object>
+      <object>objects\obj_meow</object>
+      <object>objects\obj_wow</object>
+      <object>objects\obj_sombre</object>
     </objects>
   </objects>
   <rooms name="rooms">
