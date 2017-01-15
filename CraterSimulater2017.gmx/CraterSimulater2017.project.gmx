@@ -178,6 +178,13 @@
       <object>objects\obj_arrows</object>
       <object>objects\obj_go</object>
       <object>objects\obj_p1bar</object>
+      <objects name="p1 skins">
+        <object>objects\obj_p1_skin</object>
+        <object>objects\obj_p1_skin_1</object>
+        <object>objects\obj_p1_skin_2</object>
+        <object>objects\obj_p1_skin_3</object>
+        <object>objects\obj_p1_skin_4</object>
+      </objects>
     </objects>
     <objects name="Shop Room">
       <object>objects\obj_panels</object>

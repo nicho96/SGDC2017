@@ -142,7 +142,6 @@ if(box_pos == 1){
     obj_underlay.y = 420;
     obj_underlay.image_xscale = 0.81;
     obj_underlay.image_yscale = 0.79;
-}
 
 //changing position on movement
 if(key_up){
