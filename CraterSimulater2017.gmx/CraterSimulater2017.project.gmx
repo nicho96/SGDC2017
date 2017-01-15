@@ -45,6 +45,7 @@
     <sound>sound\snd_lobby</sound>
     <sound>sound\snd_menu_error</sound>
     <sound>sound\snd_menu_move</sound>
+    <sound>sound\snd_ingame</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Cosmetics">

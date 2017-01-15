@@ -50,6 +50,7 @@ image_speed = 0;
 image_index = 0;
 total_mass = 0;
 max_speed = 0;
+last_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -231,6 +232,8 @@ max_speed = 0;
         max_speed = speed;
     }
     
+    last_speed = speed;
+    
 }else{
     speed = 0;
     if(view_wview[1] &lt; room_width){
@@ -239,7 +242,7 @@ max_speed = 0;
         view_xview[1] -= 10;
         view_yview[1] -= 10;
     }
-    visible = false;
+    image_alpha = 0;
     eyes.visible = false;
     hat.visible = false;
     flame.visible = false;
@@ -325,7 +328,7 @@ alarm[0] = room_speed * 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.parent != 2){
+            <string>if(other.parent != 2 &amp;&amp; !isFinished){
     if(field){
         add = other.mass * 0.05;
         if(multiplier){
@@ -417,10 +420,18 @@ alarm[0] = room_speed * 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(isFinished)
-    draw_sprite_ext(spr_done, 0, 660, 290, 1, 1, 0, c_white, 1);
+            <string>if(isFinished){
+    draw_sprite_ext(spr_finish, 0, 960, 290, 0.3, 0.3, 0, c_white, 1);
+    draw_set_font(meemz);
+    draw_set_halign(fa_center);
+    draw_set_colour(c_white);
+    draw_text(960, 500, "total damage " + string(last_speed * mass));
+    draw_set_colour(c_white);
+    draw_text(960, 540, "max speed " + string(max_speed * mass));
+    draw_text(960, 580, "total mass collected " + string(floor(total_mass)));
+}
     
-width = speed / 20 * 300;
+width = (mass - 40) / 80 * 300;
 draw_sprite(spr_health_back_p2, -1, 1270, 10);
 draw_sprite_part(spr_health_center_p2, -1, 0, 0, width, 70, 970, 10);
 draw_sprite(spr_health_top_p2, -1, 1270, 10);
