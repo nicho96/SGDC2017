@@ -26,14 +26,16 @@
           <argument>
             <kind>1</kind>
             <string>r = floor(random(2))
-if(r == 0){
+if(r == 1){
     tor = instance_create(x, y, obj_planet_tor);
     tor.image_xscale = 0.5;
     tor.image_yscale = 0.5;
+    show_debug_message("TOR")
 }else{
     palm = instance_create(x, y, obj_planet_palm);
     palm.image_xscale = 0.5;
     palm.image_yscale = 0.5;
+    show_debug_message("PSALM 76")
 }
 instance_destroy();
 </string>

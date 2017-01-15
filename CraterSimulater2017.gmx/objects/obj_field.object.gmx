@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>rotspeed = random(10) / 10;
-mass = exp(3 * (random(10) / 10)) + 5;
-scale = mass / 100;
+scale = 0.2
 image_xscale = scale;
 image_yscale = scale;
 direction = random(360);

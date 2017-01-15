@@ -147,8 +147,8 @@
     </objects>
     <objects name="Camera">
       <object>objects\obj_camera_p1</object>
-      <object>objects\obj_camera_p2</object>
       <object>objects\object34</object>
+      <object>objects\obj_camera_p2</object>
     </objects>
     <objects name="Powerups">
       <object>objects\obj_field</object>

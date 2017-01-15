@@ -56,6 +56,8 @@ if(lastSpawnY &lt; spawnY &amp;&amp; spawnY &lt; room_height){
         r = floor(random(25))
         if(r == 1){
             obj = instance_create(rx, ry, obj_quartz_1);
+        }else if(r == 2){
+            obj = instance_create(rx, ry, obj_field);
         }else{
             obj = instance_create(rx, ry, obj_ast);
         }
