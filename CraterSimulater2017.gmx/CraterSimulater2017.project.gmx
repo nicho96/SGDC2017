@@ -31,6 +31,10 @@
       <sprite>sprites\spr_ast4</sprite>
       <sprite>sprites\spr_ast5</sprite>
       <sprite>sprites\spr_done</sprite>
+      <sprites name="alt skins">
+        <sprite>sprites\spr_ast_tv</sprite>
+        <sprite>sprites\spr_alt_duck</sprite>
+      </sprites>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_center_bar</sprite>
