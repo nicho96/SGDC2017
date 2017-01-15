@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
-audio_play_sound(snd_secret, 1, true);
+            <string>if !audio_is_playing(snd_lobby){
+    audio_stop_all();
+    audio_play_sound(snd_lobby, 1, true);
+}
 
 depth = 100;
 
@@ -62,9 +64,9 @@ pos3y = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>key_action = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(1, gp_face1);
-key_up = keyboard_check_pressed('W') || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(1, gp_padu) || gamepad_button_check_pressed(0, gp_padu);
-key_down = keyboard_check_pressed('S') || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(1, gp_padd);
+            <string>key_action = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(1, gp_face1);
+key_up = keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(1, gp_padu) || gamepad_button_check_pressed(0, gp_padu);
+key_down = keyboard_check_pressed(ord('S')) || keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd) || gamepad_button_check_pressed(1, gp_padd);
 
 //Moving yellow bar
 if(bar_pos == 1){
