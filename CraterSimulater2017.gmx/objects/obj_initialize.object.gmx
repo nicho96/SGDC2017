@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Global Variables
-global.total_quartz = 0;
+global.total_quartz = 4;
 
 //Skin selected
 global.p1_skin = 1;
@@ -46,8 +46,8 @@ global.kamina = false;
 global.wow = false;
 //Hats
 global.fedora = false;
-global.hat2 = false;
-global.hat3 = false;
+global.sombrero = false;
+global.meow = false;
 
 room_goto(rm_mmenu);
 </string>

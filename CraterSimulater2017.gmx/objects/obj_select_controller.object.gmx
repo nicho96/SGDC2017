@@ -30,6 +30,10 @@ p1_ready = false;
 
 p2_bar_pos = 1;
 p2_ready = false;
+
+audio_stop_all();
+audio_play_sound(snd_secret, 1, true);
+
 </string>
           </argument>
         </arguments>
@@ -197,7 +201,7 @@ if(p1_ready &amp;&amp; p2_ready){
 }
 
 //sets all transparent
-//obj_p1_skin.image_alpha = 0;
+obj_p1_skin.image_alpha = 0;
 
 //Showing Sprites
 if(global.p1_skin == 1)
@@ -209,8 +213,8 @@ if(global.p1_skin == 3)
 if(global.p1_skin == 4)
     obj_p1_skin_4.image_alpha = 255;
     
-obj_p1_skin_1.image_alpha = 255;    
-obj_p1_skin_2.image_alpha = 255;
+//obj_p1_skin_1.image_alpha = 255;    
+//obj_p1_skin_2.image_alpha = 255;
 
 
 

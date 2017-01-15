@@ -26,7 +26,8 @@
   <sounds name="sound">
     <sound>sound\snd_secret</sound>
     <sound>sound\snd_lobby</sound>
-    <sound>sound\sound2</sound>
+    <sound>sound\snd_menu_error</sound>
+    <sound>sound\snd_menu_move</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Cosmetics">

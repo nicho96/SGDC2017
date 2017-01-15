@@ -25,8 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>box_pos = 1;
+            <string>audio_stop_all();
+audio_play_sound(snd_lobby, 1, true);
 
+box_pos = 1;
+
+cost1 = 1;
+cost2 = 1;
+cost3 = 1;
+cost4 = 1;
+cost5 = 1;
+cost6 = 1;
+cost7 = 1;
+cost8 = 1;
 
 </string>
           </argument>
@@ -145,6 +156,7 @@ if(box_pos == 1){
 
 //changing position on movement
 if(key_up){
+    audio_play_sound(snd_menu_move, 1, false);
     if(box_pos == 3)
         box_pos = 1;
     else if(box_pos == 4)
@@ -160,6 +172,7 @@ if(key_up){
 }
 
 if(key_down){
+    audio_play_sound(snd_menu_move, 1, false);
     if(box_pos == 1)
         box_pos = 3;
     else if(box_pos == 2)
@@ -175,6 +188,7 @@ if(key_down){
 }
 
 if(key_right){
+    audio_play_sound(snd_menu_move, 1, false);
     if(box_pos == 1)
         box_pos = 2;
     else if(box_pos == 3)
@@ -188,6 +202,7 @@ if(key_right){
 }
 
 if(key_left){
+    audio_play_sound(snd_menu_move, 1, false);
     if(box_pos == 2)
         box_pos = 1;
     else if(box_pos == 4)
@@ -196,49 +211,107 @@ if(key_left){
         box_pos = 5;     
 }
 
-cost1 = 1;
-cost2 = 1;
-cost3 = 1;
-cost4 = 1;
-cost5 = 1;
-cost6 = 1;
-cost7 = 1;
-cost8 = 1;
-
+//Buying
 if(key_action){
     if(box_pos == 1 &amp;&amp; global.total_quartz &gt;= cost1){
-        global.tv = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.tv == false){
+            global.tv = true;
+            global.total_quartz -= cost1;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.tv == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 1 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 2 &amp;&amp; global.total_quartz &gt;= cost2){
-        global.fedora = true;
-        global.total_quartz -= cost2;
-    }
+        if(global.fedora == false){
+            global.fedora = true;
+            global.total_quartz -= cost2;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.fedora == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 2 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 3 &amp;&amp; global.total_quartz &gt;= cost3){
-        global.duck = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.duck == false){
+            global.duck = true;
+            global.total_quartz -= cost3;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.duck == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 3 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+    
+    
     else if(box_pos == 4 &amp;&amp; global.total_quartz &gt;= cost4){
-        global.hat2 = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.sombrero = false){
+            global.sombrero = true;
+            global.total_quartz -= cost4;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.sombrero == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 4 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 5 &amp;&amp; global.total_quartz &gt;= cost5){
-        global.googly = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.googly == false){
+            global.googly = true;
+            global.total_quartz -= cost5;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.googly == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 5 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 6 &amp;&amp; global.total_quartz &gt;= cost6){
-        global.kamina = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.kamina == false){
+            global.kamina = true;
+            global.total_quartz -= cost6;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.kamina == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 6 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 7 &amp;&amp; global.total_quartz &gt;= cost7){
-        global.wow = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.wow == false){
+            global.wow = true;
+            global.total_quartz -= cost7;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.wow == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 7 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
+        
     else if(box_pos == 8 &amp;&amp; global.total_quartz &gt;= cost8){
-        global.hat3 = true;
-        global.total_quartz -= cost1;
-    }
+        if(global.meow == false){
+            global.meow = true;
+            global.total_quartz -= cost8;
+            audio_play_sound(snd_secret, 1, false);
+        }else if(global.meow == true)
+            audio_play_sound(snd_menu_error, 1, false);
+    }else if(box_pos == 8 &amp;&amp; global.total_quartz &lt; cost1)
+        audio_play_sound(snd_menu_error, 1, false);
 }
+
+//Lock Opacity
+if(global.tv = true)
+    obj_lock1.image_alpha = 0;
+if(global.fedora = true)
+    obj_lock2.image_alpha = 0;
+if(global.duck = true)
+    obj_lock3.image_alpha = 0;
+if(global.sombrero = true)
+    obj_lock4.image_alpha = 0;
+if(global.googly = true)
+    obj_lock5.image_alpha = 0;
+if(global.kamina = true)
+    obj_lock6.image_alpha = 0;
+if(global.wow = true)
+    obj_lock7.image_alpha = 0;
+if(global.meow = true)
+    obj_lock8.image_alpha = 0;    
 
 //Room selection
 if(key_return)
