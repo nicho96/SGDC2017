@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>player = instance_find(obj_player_2, 0)
 yPos = (player.y / room_height) * 780
-sprite = draw_sprite_ext(spr_marker_blue, 0, 645, yPos, 0.5, 0.5, 0, c_white, 1);
+sprite = draw_sprite_ext(player.sprite_index, 0, 660, yPos, 0.15, 0.15, 0, c_white, 1);
 depth = 0
 </string>
           </argument>

@@ -3,14 +3,14 @@
   <type>0</type>
   <xorig>1000</xorig>
   <yorigin>1000</yorigin>
-  <colkind>2</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>2</bboxmode>
-  <bbox_left>190</bbox_left>
-  <bbox_right>1855</bbox_right>
-  <bbox_top>160</bbox_top>
-  <bbox_bottom>1695</bbox_bottom>
+  <bboxmode>0</bboxmode>
+  <bbox_left>552</bbox_left>
+  <bbox_right>1999</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>742</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,6 +20,6 @@
   <width>2000</width>
   <height>2000</height>
   <frames>
-    <frame index="0">images\spr_planet_tor_0.png</frame>
+    <frame index="0">images\planet3_break3_0.png</frame>
   </frames>
 </sprite>
