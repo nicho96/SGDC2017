@@ -48,6 +48,8 @@ flame.owner = self;
 quartz = 0;
 image_speed = 0;
 image_index = 0;
+total_mass = 0;
+max_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -225,6 +227,10 @@ image_index = 0;
     flame.image_yscale = image_yscale;
     flame.image_angle = image_angle;
     
+    if(max_speed &lt; speed){
+        max_speed = speed;
+    }
+    
 }else{
     speed = 0;
     if(view_wview[1] &lt; room_width){
@@ -321,11 +327,12 @@ alarm[0] = room_speed * 1;
             <kind>1</kind>
             <string>if(other.parent != 2){
     if(field){
-        add = other.mass * 0.1
+        add = other.mass * 0.05;
         if(multiplier){
-            add = add * 1.5;
+            add = add * 1.3;
         }
         mass += add //10% of mass is transfered
+        total_mass += add;
         speed -= other.mass / 100
         if(mass &lt; 40){
             mass = 40;
@@ -345,6 +352,7 @@ alarm[0] = room_speed * 1;
             if(multiplier){
                 add = add * 1.5;
             }
+            total_mass += add;
             mass += add //10% of mass is transfered
             speed -= other.mass / 100
             if(mass &lt; 40){

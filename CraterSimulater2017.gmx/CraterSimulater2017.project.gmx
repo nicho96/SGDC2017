@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="2" name="datafiles">
     <datafile>
       <name>planet2_break.pdn</name>
       <exists>-1</exists>
@@ -20,6 +20,23 @@
         </Config>
       </ConfigOptions>
       <filename>planet2_break.pdn</filename>
+    </datafile>
+    <datafile>
+      <name>meemo_font.ttf</name>
+      <exists>-1</exists>
+      <size>12100</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>meemo_font.ttf</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -139,6 +156,17 @@
       <sprite>sprites\spr_underlay</sprite>
     </sprites>
     <sprite>sprites\spr_lock</sprite>
+    <sprite>sprites\spr_earth</sprite>
+    <sprites name="earth_parts">
+      <sprite>sprites\planet3_break8</sprite>
+      <sprite>sprites\planet3_break1</sprite>
+      <sprite>sprites\planet3_break2</sprite>
+      <sprite>sprites\planet3_break3</sprite>
+      <sprite>sprites\planet3_break4</sprite>
+      <sprite>sprites\planet3_break5</sprite>
+      <sprite>sprites\planet3_break6</sprite>
+      <sprite>sprites\planet3_break7</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_space</background>
@@ -148,12 +176,16 @@
     <background>background\bg_shop</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\meemz</font>
+  </fonts>
   <objects name="objects">
     <objects name=" Planets">
       <object>objects\obj_planet_place</object>
       <object>objects\obj_planet_exploded_place</object>
       <object>objects\obj_planet</object>
       <object>objects\obj_planet_tor</object>
+      <object>objects\obj_planet_earth</object>
       <object>objects\obj_planet_palm</object>
     </objects>
     <object>objects\obj_player_1</object>
