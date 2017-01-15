@@ -98,14 +98,74 @@ if(p1_bar_pos == 1){
 
 //Changing selection (No wrapping)
 if(p1_key_down){
-    if (p1_bar_pos &lt; 4)
+    if (p1_bar_pos &lt; 4) //add quiet sound on menu change
         p1_bar_pos ++;
 }
 
 if(p1_key_up){
-    if (p1_bar_pos &gt; 1)
+    if (p1_bar_pos &gt; 1) //add quiet sound on menu change
         p1_bar_pos --;
 }
+
+ 
+
+if(p1_bar_pos == 1){
+    if(p1_key_right){//*DRAW SKIN SPRITE ON BUBBLE*
+        global.p1_skin ++;
+        if(global.p1_skin &gt; 4)
+            global.p1_skin = 1;
+    }
+    if(p1_key_left){//*DRAW SKIN SPRITE ON BUBBLE*
+        global.p1_skin --;
+        if(global.p1_skin &lt; 1)
+            global.p1_skin = 4;
+    }
+}
+if(p1_bar_pos == 2){
+    if(p1_key_right){//DRAW SPRITE ON BUBBLE
+        global.p1_glasses ++;
+        if(global.p1_glasses &gt; 3)
+            global.p1_glasses = 0;
+    }
+    if(p1_key_left){//DRAW SPRITE ON BUBBZZ
+        global.p1_glasses --;
+        if(global.p1_glasses &lt; 0)
+            global.p1_glasses = 3;
+    }   
+}
+if(p1_bar_pos == 3){
+    if(p1_key_right){
+        global.p1_hat ++;
+        if(global.p1_glasses &gt; 3)
+            global.p1_glasses = 0;
+    }
+    if(p1_key_left){
+        global.p1_hat --;
+        if(global.p1_glasses &lt; 0)
+            global.p1_glasses = 3;
+    }
+}
+if(p1_bar_pos == 4){
+    if(p1_key_action){
+        //if(
+    }
+}
+
+//sets all transparent
+//obj_p1_skin.image_alpha = 0;
+
+//Showing Sprites
+if(global.p1_skin == 1)
+    obj_p1_skin_1.image_alpha = 255;
+if(global.p1_skin == 2)
+    obj_p1_skin_2.image_alpha = 255;
+if(global.p1_skin == 3)
+    obj_p1_skin_3.image_alpha = 255;
+if(global.p1_skin == 4)
+    obj_p1_skin_4.image_alpha = 255;
+    
+obj_p1_skin_1.image_alpha = 255;    
+obj_p1_skin_2.image_alpha = 255;
 
 
 
